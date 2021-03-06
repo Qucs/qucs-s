@@ -1,0 +1,8 @@
+# Qucs Module description file
+# (c) 2021 Felix Salfelder
+# GPLv3+
+
+RAW_SRCS = \
+	xyce_script.cc
+
+TARGET = qucs-s

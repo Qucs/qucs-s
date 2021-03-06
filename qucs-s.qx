@@ -1,0 +1,14 @@
+
+attach legacy
+attach legacy/paintings
+attach legacy/components
+attach legacy/action
+attach plugins/misc
+attach plugins/gui
+
+loadlegacylib ./QucsXyceLib1.lib
+loadlegacylib
+
+attach contrib/hidpi
+attach ./qucs-s
+startgui
