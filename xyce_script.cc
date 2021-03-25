@@ -132,7 +132,7 @@ XyceScript::~XyceScript()
 
 XyceScript::XyceScript(XyceScript const& p) : TaskElement(p)
 {
-	setTypeName("AC");
+	set_dev_type("AC");
 
 	assert(!Props.count());
 	for(auto i : p.Props){
