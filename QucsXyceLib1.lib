@@ -1,0 +1,467 @@
+<Qucs Library 0.0.22 "QucsXyceLib1">
+<!-- (c) 2021 Mike Brinson -->
+<!-- BUG missing license statement -->
+
+<Component HICUML0_npn>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:QucsXyceLib1_HICUML0_npn nc nb ne nsub ndt AF="2.0" AHC="0.1" AHQ="0.0" AJEDC="2.5" AJE="2.5" ALCES="0.0" ALEAV="0.0" ALIQFH="0.0" ALIT="0.333" ALKAV="0.0" ALQF="0.167" ALT0="0.0" ALVS="0.0" AVER="0.0" CBCPAR="0.0" CJCI0="1e-20" CJCK0="1e-20" CJE0="1e-20" CJS0="1e-20" CTH="0.0" DT0H="0.0" DVGBE="0.0" EAVL="0.0" F1VG="0.000102377" CBEPAR="0.0" CJCX0="1e-20" F2VG="0.00043215" FBC="1.0" FGEO="0.656" FIQF="0.0" FLNQS="0.0" FLSH="0.0" GTE="1.0" IBCS="0.0" IBES="1e-18" IQF="1e6" IQFH="1e6" IQR="1e6" IRES="0.0" IS="1e-16" ISCS="0.0" IT_MOD="0.0" ITSS="0.0" KAVL="0.0" KF="0.0" KIQFH="0.0" KT0="0.0" MBC="1.0" MBE="1.0" MCF="1.0" MCR="1.0" MRE="2.0" MSC="1.0" MSF="1.0" RBI0="0.0" RBX="0.0" RCI0="150.0" RCX="0" RE="0" RTH="0" T0="0" TEF0="0" TBVL="0" TEF_TEMP="1" TFH="0" THCS="0" TNOM="27" TR="0" TYPE="1" VCES="0.1" VDCI="0.7" VDCX="0.7" VDE="0.9" VDEDC="0.9" VDS="0.3" VEF="1e+6" VER="1e+6" VGB="1.2" VGC="1.17" VGE="1.17" VGS="1.17" VLIM="0.5" VPT="100" VPTCI="100" VPTCX="100" VPTS="100" VR0C="1e+06" VR0E="2.5" ZCI="0.333" ZCX="0.333" ZE="0.5" ZEDC="0.5" ZETABET="3.5" ZETACI="0" ZETACT="3" ZETAIQF="0" ZETARBI="0" ZETARBX="0" ZETARCX="0" ZETARE="0" ZETARTH="0" ZETAVER="-1" ZETAVGBE="1" ZS="0.3"
+R:R1 gnd nc R="1e9" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+R:R2 gnd nb R="1e9" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+R:R5 gnd ndt R="1e9" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+R:R4 nsub gnd R="1e9" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+R:R3 ne gnd R="1e9" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+.Def:End
+  </Model>
+  <Spice>* Qucs 0.0.22  QucsXyceLib1_HICUML0_npn.sch
+
+.SUBCKT QucsXyceLib1_HICUML0_npn  gnd nc nb ne nsub ndt AF=2.0 AHC=0.1 AHQ=0.0 AJEDC=2.5 AJE=2.5 ALCES=0.0 ALEAV=0.0 ALIQFH=0.0 ALIT=0.333 ALKAV=0.0 ALQF=0.167 ALT0=0.0 ALVS=0.0 AVER=0.0 CBCPAR=0.0 CJCI0=1e-20 CJCK0=1e-20 CJE0=1e-20 CJS0=1e-20 CTH=0.0 DT0H=0.0 DVGBE=0.0 EAVL=0.0 F1VG=0.000102377 CBEPAR=0.0 CJCX0=1e-20 F2VG=0.00043215 FBC=1.0 FGEO=0.656 FIQF=0.0 FLNQS=0.0 FLSH=0.0 GTE=1.0 IBCS=0.0 IBES=1e-18 IQF=1e6 IQFH=1e6 IQR=1e6 IRES=0.0 IS=1e-16 ISCS=0.0 IT_MOD=0.0 ITSS=0.0 KAVL=0.0 KF=0.0 KIQFH=0.0 KT0=0.0 MBC=1.0 MBE=1.0 MCF=1.0 MCR=1.0 MRE=2.0 MSC=1.0 MSF=1.0 RBI0=0.0 RBX=0.0 RCI0=150.0 RCX=0 RE=0 RTH=0 T0=0 TEF0=0 TBVL=0 TEF_TEMP=1 TFH=0 THCS=0 TNOM=27 TR=0 TYPE=1 VCES=0.1 VDCI=0.7 VDCX=0.7 VDE=0.9 VDEDC=0.9 VDS=0.3 VEF=1e+6 VER=1e+6 VGB=1.2 VGC=1.17 VGE=1.17 VGS=1.17 VLIM=0.5 VPT=100 VPTCI=100 VPTCX=100 VPTS=100 VR0C=1e+06 VR0E=2.5 ZCI=0.333 ZCX=0.333 ZE=0.5 ZEDC=0.5 ZETABET=3.5 ZETACI=0 ZETACT=3 ZETAIQF=0 ZETARBI=0 ZETARBX=0 ZETARCX=0 ZETARE=0 ZETARTH=0 ZETAVER=-1 ZETAVGBE=1 ZS=0.3 
+
+Q1 nc nb ne nsub  ndt  HICUML0npn
+.MODEL HICUML0npn  npn ( Level = 230
++ AF={AF} AHC={AHC} AHQ={AHQ} AJE={AJE} AJEDC={AJEDC}
++ ALCES={ALCES} ALEAV={ALEAV} ALIQFH={ALIQFH} ALIT={ALIT} ALKAV={ALKAV}
++ ALQF={ALQF} ALT0={ALT0} ALVS={ALVS} AVER={AVER} CBCPAR={CBCPAR}
++ CBEPAR={CBEPAR} CJCI0={CJCI0} CJCX0={CJCX0} CJE0={CJE0} CJS0={CJS0} 
++ CTH={CTH} DT0H={DT0H} DVGBE={DVGBE} EAVL={EAVL} F1VG={F1VG}
++ F2VG={F2VG} FBC={FBC} FGEO={FGEO} FIQF={FIQF} FLNQS={FLNQS}
++ FLSH={FLSH} GTE={GTE} IBCS={IBCS} IBES={IBES} IQF={IQF}
++ IQFH= {IQFH} IQR={IQR} IRES={IRES} IS={IS} ISCS={ISCS}
++ IT_MOD={IT_MOD} ITSS={ITSS} KAVL={KAVL} KF={KF} KIQFH={KIQFH}
++ KT0={KT0} MBC={MBC} MBE={MBE} MCF={MCF} MCR={MCR}
++ MRE={MRE} MSC={MSC} MSF={MSF} RBI0={RBI0} RBX={RBX}
++ RCI0={RCI0} RCX={RCX} RE={RE} RTH={RTH} T0={T0} TBVL={TBVL}
++ TEF0={TEF0} TEF_TEMP={TEF_TEMP} TFH={TFH} THCS={THCS} TNOM={TNOM}
++ TR={TR} TYPE={TYPE} VCES={VCES} VDCI={VDCI} VDCX={VDCX}
++ VDE={VDE} VDEDC={VDEDC} VDS={VDS} VEF={VEF} VER={VER}
++ VGB={VGB} VGC={VGC} VGE={VGE} VGS={VGS} VLIM={VLIM}
++ VPT={VPT} VPTCI={VPTCI}  VPTCX={VPTCX} VPTS={VPTS}
++ VR0C={VR0C} VR0E={VR0E} ZCI={ZCI} ZCX={ZCX} ZE={ZE} ZEDC={ZEDC}
++ ZETABET={ZETABET} ZETACI={ZETACI} ZETACT={ZETACI} ZETAIQF={ZETAIQF}
++ ZETARBI={ZETARBI} ZETARBX={ZETARBX} ZETARCX={ZETARCX} ZETARE={ZETARE}
++ ZETARTH={ZETARTH} ZETAVER={ZETAVER} ZETAVGBE={ZETAVGBE}  )  
+
+R1 0 nc  1E9
+R2 0 nb  1E9
+R5 0 ndt  1E9
+
+R4 nsub 0  1E9
+R3 ne 0  1E9
+.ENDS
+  </Spice>
+<SpiceAttach >
+  <Symbol>
+    <Line 0 20 0 -40 #00007f 4 1>
+    <Line 0 -10 20 -20 #00007f 3 1>
+    <Line 20 70 0 -40 #000080 2 1>
+    <Line 20 -30 0 -40 #000080 2 1>
+    <Line 20 -10 0 20 #005500 3 1>
+    <Line 20 0 40 0 #00007f 2 1>
+    <Line -50 0 50 0 #00007f 2 1>
+    <.PortSym 60 0 4 180>
+    <.PortSym -50 0 2 0>
+    <.PortSym -50 30 5 0>
+    <.PortSym 20 -70 1 0>
+    <.PortSym 20 70 3 0>
+    <Line -10 20 0 20 #00007f 3 1>
+    <Line -50 30 40 0 #00007f 2 1>
+    <Line 20 30 -20 -20 #00007f 3 1>
+    <Line 20 30 -15 0 #00007f 3 1>
+    <Line 20 30 5 -10 #00007f 3 1>
+    <.ID 50 24 HICUML0_npn "0=AF=2.0=Flicker noise exponent factor.=" "0=AHC=0.1=Smoothing factor for current dependence.=" "0=AHQ=0.0=Smoothing factor for d.c. injection width.=" "0=AJEDC=2.5=BE capacitance ratio maximum to zero-bias value for d.c. transfer current.=" "0=AJE=2.5=Ratio of maximum to zero-bias value.=" "0=ALCES=0.0=Relative TC of vccs.=" "0=ALEAV=0.0=TC of avalanch exponential factor.=" "0=ALIQFH=0.0=First-order TC of iqfh.=" "0=ALIT=0.333=Factor for additional delay time of transfer current.=" "0=ALKAV=0.0=TC of avalanch prefactor.=" "0=ALQF=0.167=Factor for additional delayority charge. time of minority charge.=" "0=ALT0=0.0=First-order TC of tf0.=" "0=ALVS=0.0=Relative TC of satur. drft velocity.=" "0=AVER=0.0=Bias dependence for reverse Early voltage.=" "0=CBCPAR=0.0=Collector-base isolation (overlap) capacitor.=" "0=CJCI0=1e-20=Total zero-bias  BC depletion capacitance.=" "0=CJCK0=1e-20=Zero-bias external BC depletion capacitance.=" "0=CJE0=1e-20=Zero-bias BE depletion capacitance.=" "0=CJS0=1e-20=Zero-bias SC depletion capacitance.=" "0=CTH=0.0=Thermal capacitance.=" "0=DT0H=0.0==" "0=DVGBE=0.0=Bandgap difference between base and BE junction.=" "0=EAVL=0.0=Exponent factor.=" "0=F1VG=0.000102377=Coefficient K1 in T-dependent bandgap equation.=" "0=CBEPAR=0.0=Emitter-base oxide capacitor.=" "0=CJCX0=1e-20=Total zero-bias BC depletion capacitance.=" "0=F2VG=0.00043215=Coefficient K2 in T-dependent bandgap equation.=" "0=FBC=1.0=Split factor  Cjci0/Clc0.=" "0=FGEO=0.656=Geometry factor.=" "0=FIQF=0.0=Flag for turning on base related critical current.=" "0=FLNQS=0.0=Flag for turning on and off vertical NQS effect.=" "0=FLSH=0.0=Flag for self-heating.=" "0=GTE=1.0=Exponent factor for emitter transit time.=" "0=IBCS=0.0=BC saturation current.=" "0=IBES=1e-18=BE saturation current.=" "0=IQF=1e6=Forward d.c. high-injection roll-off current.=" "0=IQFH=1e6=High-injection correction current.=" "0=IQR=1e6=Inverse d.c. high-injection roll-off current.=" "0=IRES=0.0=BE recombination saturation current.=" "0=IS=1e-16=(Modified) saturation current.=" "0=ISCS=0.0=SC saturation current.=" "0=IT_MOD=0.0=Flag for using third order solution for transfer current.=" "0=ITSS=0.0=Substrate transistor transfer saturation current.=" "0=KAVL=0.0=Prefactor.=" "0=KF=0.0=Flicker noise coefficient.=" "0=KIQFH=0.0=Second-order TC of iqfh.=" "0=KT0=0.0=Second-order TC of tf0.=" "0=MBC=1.0=BC non-ideality factor.=" "0=MBE=1.0=BE non-ideality factor.=" "0=MCF=1.0=Non-ideality coefficientof forward collector current.=" "0=MCR=1.0=Non-ideality coefficientof reverse collector current.=" "0=MRE=2.0=BE recombination non-ideality factor.=" "0=MSC=1.0=SC non-ideality factor.=" "0=MSF=1.0=Substrate transistor transfer current non-ideality factor.=" "0=RBI0=0.0=Internal base resistance at zero-bias.=" "0=RBX=0.0=External base series resistance.=" "0=RCI0=150.0=Low-field collector resistance under emitter.=" "0=RCX=0=Emitter series resistance.=" "0=RE=0=External collector series resistance.=" "0=RTH=0=Thermal resistance.=" "0=T0=0=Low current transit time at Vbici equals 0.=" "0=TEF0=0=Storage time in neytral emitter.=" "0=TBVL=0=SCR width modulation contribution.=" "0=TEF_TEMP=1=Flag for turning temperature dependence of tef() on and off.=" "0=TFH=0=High-injection correction factor.=" "0=THCS=0=Saturation time at high current densities.=" "0=TNOM=27=Temperature for which parameters are valid.=" "0=TR=0=Storage time at inverse operation.=" "0=TYPE=1=For transistor type NPN(+1).=" "0=VCES=0.1=Saturation voltage.=" "0=VDCI=0.7=BC built-in voltage.=" "0=VDCX=0.7=External BC built-in voltage.=" "0=VDE=0.9=BE built-in voltage.=" "0=VDEDC=0.9=BE charge built-in voltage for d.c. transfer current.=" "0=VDS=0.3=SC built-in voltage.=" "0=VEF=1e+6=Forward  Early voltage (normalized volt.).=" "0=VER=1e+6=Reverse  Early voltage (normalized volt.).=" "0=VGB=1.2=Bandgap-voltage.=" "0=VGC=1.17=Effective collector bandgap-voltage.=" "0=VGE=1.17=Effective emitter bandgap-voltage.=" "0=VGS=1.17=Effective substrate bandgap-voltage.=" "0=VLIM=0.5=Voltage dividing ohmic and saturation.=" "0=VPT=100=Punch-through voltage.=" "0=VPTCI=100=Punch-through voltage of BC junction.=" "0=VPTCX=100=Punch-through voltage.=" "0=VPTS=100=SC punch-through voltage.=" "0=VR0C=1e+06=Forward Early voltage (normalized volt.).=" "0=VR0E=2.5=Forward Early voltage (normalized volt.).=" "0=ZCI=0.333=BC exponent factor.=" "0=ZCX=0.333=External BC exponent factor.=" "0=ZE=0.5=BE exponent factor.=" "0=ZEDC=0.5=Charge BE exponent factor for d.c. transfer current.=" "0=ZETABET=3.5=Exponent coefficient in BE junction current temperature depemdence.=" "0=ZETACI=0=TC of epi-collector diffusivity.=" "0=ZETACT=3=Exponent coefficient in transfer current temperature dependence.=" "0=ZETAIQF=0=TC of iqf.=" "0=ZETARBI=0=TC of internal base resistance.=" "0=ZETARBX=0=TC of external base resistance.=" "0=ZETARCX=0=TC of external collector resistance.=" "0=ZETARE=0=TC of emitter resistance.=" "0=ZETARTH=0=Exponent factor for temperature dependent thermal resistance.=" "0=ZETAVER=-1=TC of Reverse Early voltage.=" "0=ZETAVGBE=1=TC of AVER.=" "0=ZS=0.3=External SC exponent factor.=">
+  </Symbol>
+</Component>
+
+<Component ammeter>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:QucsXyceLib1_ammeter p1 p2
+.Def:End
+  </Model>
+  <Spice>* Qucs 0.0.22  QucsXyceLib1_ammeter.sch
+
+.SUBCKT QucsXyceLib1_ammeter  gnd p1 p2 
+
+vprobe p1 p2 1e-3
+
+
+.ENDS
+  </Spice>
+<SpiceAttach >
+  <VerilogModel>  </VerilogModel>
+  <VHDLModel>  </VHDLModel>
+  <Symbol>
+    <Rectangle -10 -40 40 50 #000000 3 1 #c0c0c0 1 0>
+    <Line 10 0 30 0 #00007f 2 1>
+    <.PortSym 40 0 2 180>
+    <.PortSym -20 0 1 0>
+    <Rectangle -5 -35 30 25 #000000 3 1 #c0c0c0 1 0>
+    <Text 2 -34 16 #000000 0 "A">
+    <Arrow -20 0 35 0 10 6 #00007f 2 1 0>
+    <.ID -20 19 ammeter>
+  </Symbol>
+</Component>
+
+<Component c_lin>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:QucsXyceLib1_c_lin p1 p2 c="1e-6" d="0.0233" m="1.0" tc1="0.0" tc2="0.0" p_temp="26.58" age="0.0"
+.Def:End
+  </Model>
+  <Spice>* Qucs 0.0.22  QucsXyceLib1_c_lin.sch
+
+.SUBCKT QucsXyceLib1_c_lin  gnd p1 p2 c=1e-6 d=0.0233 m=1.0 tc1=0.0 tc2=0.0 p_temp=26.58 age=0.0 
+
+rc_linp p1 p2 1.0e9
+clinear p1 p2 {c} d={d}  tc1={tc1} tc2={tc2} temp={p_temp} m={m} age={age}
+
+.ENDS
+  </Spice>
+<SpiceAttach >
+  <VerilogModel>  </VerilogModel>
+  <VHDLModel>  </VHDLModel>
+  <Symbol>
+    <Line 0 5 0 35 #000080 2 1>
+    <Line 0 -40 0 35 #00007f 2 1>
+    <.PortSym 0 40 2 0>
+    <.PortSym 0 -40 1 0>
+    <Line 20 -20 0 0 #000000 0 1>
+    <Line -20 -5 40 0 #00007f 3 1>
+    <Line -20 5 40 0 #00007f 3 1>
+    <.ID 40 -36 c_lin "1=c=1e-6=capacitance (F).=" "0=d=0.0233=age degradation coefficient.=" "0=m=1.0=multiplicity factor.=" "0=tc1=0.0=linear temperature coefficient (1/deg C).=" "0=tc2=0.0=quadratic temperature coefficient (1/(deg C * deg C)) =" "0=p_temp=26.58=device temperature (deg C).=" "0=age=0.0=age of capacitor.=">
+  </Symbol>
+</Component>
+
+<Component c_q>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:QucsXyceLib1_c_q p1 p2 q="1e-3"
+.Def:End
+  </Model>
+  <Spice>* Qucs 0.0.22  QucsXyceLib1_c_q.sch
+
+.SUBCKT QucsXyceLib1_c_q  gnd p1 p2 q=1e-3 
+rqp p1 p2 r=1.0e9
+ccharge p1 p2 q = q
+
+.ENDS
+  </Spice>
+<SpiceAttach >
+  <VerilogModel>  </VerilogModel>
+  <VHDLModel>  </VHDLModel>
+  <Symbol>
+    <Line 0 5 0 35 #000080 2 1>
+    <Line 0 -40 0 35 #00007f 2 1>
+    <.PortSym 0 40 2 0>
+    <.PortSym 0 -40 1 0>
+    <Line 20 -20 0 0 #000000 0 1>
+    <Line -20 -5 40 0 #00007f 3 1>
+    <Line -20 5 40 0 #00007f 3 1>
+    <Text 5 10 10 #000000 0 "p2">
+    <Text 5 -40 10 #000000 0 "p1">
+    <.ID 40 -36 c_q "1=q=1e-3=capacitor charge entered as a number or an expression.=">
+  </Symbol>
+</Component>
+
+<Component i_dc>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:QucsXyceLib1_i_dc p1 p2 dc="0.0"
+.Def:End
+  </Model>
+  <Spice>* Qucs 0.0.22  QucsXyceLib1_i_dc.sch
+
+.SUBCKT QucsXyceLib1_i_dc  gnd p1 p2 dc=0.0 
+i_dc p1 p2 dc {dc} 
+
+.ENDS
+  </Spice>
+<SpiceAttach >
+  <VerilogModel>  </VerilogModel>
+  <VHDLModel>  </VHDLModel>
+  <Symbol>
+    <Line -20 0 0 0 #000000 0 1>
+    <Arrow -20 -40 0 20 10 4 #000000 3 1 0>
+    <Ellipse -35 -45 30 30 #00007f 3 1 #c0c0c0 1 0>
+    <Line -20 -15 0 15 #000080 2 1>
+    <Line -20 -60 0 15 #000080 2 1>
+    <.PortSym -20 0 2 0>
+    <.PortSym -20 -60 1 0>
+    <.ID 10 -60 i_dc "1=dc=0.0=dc current (I)=">
+  </Symbol>
+</Component>
+
+<Component l_lin>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:QucsXyceLib1_l_lin p1 p2 l="1e-6" m="1.0" tc1="0.0" tc2="0.0" p_temp="26.58"
+.Def:End
+  </Model>
+  <Spice>* Qucs 0.0.22  QucsXyceLib1_l_lin.sch
+
+.SUBCKT QucsXyceLib1_l_lin  gnd p1 p2 l=1e-6 m=1.0 tc1=0.0 tc2=0.0 p_temp=26.58 
+
+rl_lin p1 p2 1e9
+l_lin p1 p2 {l} m={m) tc1={tc1} tc2={tc2} temp={p_temp}
+
+.ENDS
+  </Spice>
+<SpiceAttach >
+  <VerilogModel>  </VerilogModel>
+  <VHDLModel>  </VHDLModel>
+  <Symbol>
+    <Line 74 -28 -2 0 #00007f 3 1>
+    <Line 72 -28 -3 1 #00007f 3 1>
+    <Line 69 -27 -3 3 #00007f 3 1>
+    <Line 77 -27 -3 -1 #00007f 3 1>
+    <Line 77 -27 3 3 #00007f 3 1>
+    <Line 66 -24 -2 4 #00007f 3 1>
+    <Line 80 -24 2 4 #00007f 3 1>
+    <Line 92 -28 -2 0 #00007f 3 1>
+    <Line 90 -28 -3 1 #00007f 3 1>
+    <Line 87 -27 -3 3 #00007f 3 1>
+    <Line 95 -27 -3 -1 #00007f 3 1>
+    <Line 95 -27 3 3 #00007f 3 1>
+    <Line 84 -24 -2 4 #00007f 3 1>
+    <Line 98 -24 2 4 #00007f 3 1>
+    <Line 110 -28 -2 0 #00007f 3 1>
+    <Line 108 -28 -3 1 #00007f 3 1>
+    <Line 105 -27 -3 3 #00007f 3 1>
+    <Line 113 -27 -3 -1 #00007f 3 1>
+    <Line 113 -27 3 3 #00007f 3 1>
+    <Line 102 -24 -2 4 #00007f 3 1>
+    <Line 116 -24 2 4 #00007f 3 1>
+    <Line 56 -28 -2 0 #00007f 3 1>
+    <Line 54 -28 -3 1 #00007f 3 1>
+    <Line 51 -27 -3 3 #00007f 3 1>
+    <Line 59 -27 -3 -1 #00007f 3 1>
+    <Line 59 -27 3 3 #00007f 3 1>
+    <Line 48 -24 -2 4 #00007f 3 1>
+    <Line 62 -24 2 4 #00007f 3 1>
+    <Line 30 -20 16 0 #00007f 2 1>
+    <Line 118 -20 12 0 #00007f 2 1>
+    <.PortSym 130 -20 2 180>
+    <.PortSym 30 -20 1 0>
+    <.ID 30 4 l_lin "1=l=1e-6=inductance (H).=" "0=m=1.0=multiplicity Factor.=" "0=tc1=0.0=Linear Temperature Coefficient(A/(deg C)).=" "0=tc2=0.0=Quadratic Temperature Coefficient (1/(deg C *deg C)),=" "0=p_temp=26.58=device tempwrature (deg C).=">
+  </Symbol>
+</Component>
+
+<Component port_device_sin>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:QucsXyceLib1_port_device_sin p1 p2 num="1" ac_mag="1.0" ac_phase="0.0" dc="0.0" z0="50.0" tran_vo="0.0" tran_va="1.0" tran_frequency="1000.0" tran_phase="0.0"
+.Def:End
+  </Model>
+  <Spice>* Qucs 0.0.22  QucsXyceLib1_port_device_sin.sch
+
+.SUBCKT QucsXyceLib1_port_device_sin  gnd p1 p2 num=1 ac_mag=1.0 ac_phase=0.0 dc=0.0 z0=50.0 tran_vo=0.0 tran_va=1.0 tran_frequency=1000.0 tran_phase=0.0 
+
+rpdsin1 p1 p2 1e9
+port p1 p2 dc {dc} port={num}  z0={z0}  ac {ac_mag} {ac_phase} sin {tran_vo} {tran_va} {tran_frequency} {tran_phase}
+
+.ENDS
+  </Spice>
+<SpiceAttach >
+  <VerilogModel>  </VerilogModel>
+  <VHDLModel>  </VHDLModel>
+  <Symbol>
+    <Line 0 20 0 0 #000000 0 1>
+    <Line 0 -30 0 20 #00007f 2 1>
+    <Rectangle -5 -10 10 20 #005500 3 1 #c0c0c0 1 0>
+    <Line 0 10 0 10 #005500 3 1>
+    <Ellipse -15 20 30 30 #005500 3 1 #c0c0c0 1 0>
+    <Line 0 50 0 20 #00007f 2 1>
+    <Rectangle -20 -20 40 80 #000000 3 3 #c0c0c0 1 0>
+    <.PortSym 0 70 2 0>
+    <.PortSym 0 -30 1 0>
+    <.ID 40 -76 port_device_sin "1=num=1=Port number.=" "1=ac_mag=1.0=AC signal magnitude (V).=" "1=ac_phase=0.0=AC signal phase (degrees).=" "1=dc=0.0=DC signal magnitude (V).=" "1=z0=50.0=Source impedance (Ohm).=" "1=tran_vo=0.0=Transient sine signal d.c. offset (V).=" "1=tran_va=1.0=Transient sine signal peak amplitude value (V).=" "1=tran_frequency=1000.0=Transient sine signal frequency (Hz).=" "1=tran_phase=0.0=Transient  signal phase (degrees).=">
+  </Symbol>
+</Component>
+
+<Component probe_v>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:QucsXyceLib1_probe_v p1
+.Def:End
+  </Model>
+  <Spice>* Qucs 0.0.22  QucsXyceLib1_probe_v.sch
+
+.SUBCKT QucsXyceLib1_probe_v  gnd p1 
+rprobe  p1 0 1e9
+
+.ENDS
+  </Spice>
+<SpiceAttach >
+  <VerilogModel>  </VerilogModel>
+  <VHDLModel>  </VHDLModel>
+  <Symbol>
+    <Line 40 0 20 0 #000080 2 1>
+    <.PortSym 40 0 1 0>
+    <Line 60 0 10 -5 #000080 2 1>
+    <Text 45 -20 10 #000000 0 "p1">
+    <Line 60 0 10 5 #000080 2 1>
+    <Line 70 5 20 0 #000080 2 1>
+    <Line 70 -5 20 0 #000080 2 1>
+    <Line 90 -5 0 10 #00007f 2 1>
+    <.ID 95 -11 probe_v>
+  </Symbol>
+</Component>
+
+<Component r_lin>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:QucsXyceLib1_r_lin p1 p2 r="50" m="1" tc1="0.0" tc2="0.0" tce="0.0" p_temp="26.58" dtemp="0.0"
+.Def:End
+  </Model>
+  <Spice>* Qucs 0.0.22  QucsXyceLib1_r_lin.sch
+
+.SUBCKT QucsXyceLib1_r_lin  gnd p1 p2 r=50 m=1 tc1=0.0 tc2=0.0 tce=0.0 p_temp=26.58 dtemp=0.0 
+rlinear p1 p2 {r} m={m} tc1={tc1} tc2={tc2} tce={tce} temp={p_temp} dtemp={dtemp}
+
+.ENDS
+  </Spice>
+<SpiceAttach >
+  <VerilogModel>  </VerilogModel>
+  <VHDLModel>  </VHDLModel>
+  <Symbol>
+    <Rectangle -10 -20 20 40 #00007f 3 1 #c0c0c0 1 0>
+    <Line 0 -40 0 20 #000080 2 1>
+    <Line 0 20 0 20 #000080 2 1>
+    <.PortSym 0 40 2 0>
+    <.PortSym 0 -40 1 0>
+    <.ID 30 -36 r_lin "1=r=50=Resistance=" "0=m=1=Multiplicity Factor=" "0=tc1=0.0=Linear Temperature Coefficient  (1/Celsius)=" "0=tc2=0.0=Quadratic Temperature Coefficient (1/(Celsius^2))=" "0=tce=0.0=Exponential Temperature Coefficient (%/Celsius)=" "0=p_temp=26.58=Device temperature (Celsius)=" "0=dtemp=0.0=Device temperature (Celsius), for compatibilty, but NOT used by Xyce.=">
+  </Symbol>
+</Component>
+
+<Component v_dc>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:QucsXyceLib1_v_dc p1 p2 dc="0.0"
+.Def:End
+  </Model>
+  <Spice>* Qucs 0.0.22  QucsXyceLib1_v_dc.sch
+
+.SUBCKT QucsXyceLib1_v_dc  gnd p1 p2 dc=0.0 
+v_dc p1 p2 dc {dc} 
+
+.ENDS
+  </Spice>
+<SpiceAttach >
+  <VerilogModel>  </VerilogModel>
+  <VHDLModel>  </VHDLModel>
+  <Symbol>
+    <Line -20 0 0 0 #000000 0 1>
+    <Line -30 -10 20 0 #00007f 6 1>
+    <Line -20 -10 0 20 #000080 2 1>
+    <Text -10 -10 20 #000000 0 "-">
+    <.PortSym -20 10 2 0>
+    <Text -10 -40 16 #000000 0 "+">
+    <Line -35 -20 30 0 #000000 3 1>
+    <Line -20 -40 0 20 #000080 2 1>
+    <.PortSym -20 -40 1 0>
+    <.ID 10 -40 v_dc "1=dc=0.0=dc voltage (V)=">
+  </Symbol>
+</Component>
+
+<Component v_sin>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:QucsXyceLib1_v_sin p1 p2 dc_value="0.0" ac_mag="1.0" ac_phase="0.0" v0_value="0.0" va_value="0.0" freq_value="1000.0" td_value="0.0" theta_value="0.0" phase_value="0.0"
+.Def:End
+  </Model>
+  <Spice>* Qucs 0.0.22  QucsXyceLib1_v_sin.sch
+
+.SUBCKT QucsXyceLib1_v_sin  gnd p1 p2 dc_value=0.0 ac_mag=1.0 ac_phase=0.0 v0_value=0.0 va_value=0.0 freq_value=1000.0 td_value=0.0 theta_value=0.0 phase_value=0.0 
+v_sin p1 p2 dc {dc_value} ac {ac_mag} {ac_phase}
++ sin( {v0_value} {va_value} {freq_value} {td_value} {theta_value}
++ {phase_value})
+
+.ENDS
+  </Spice>
+<SpiceAttach >
+  <VerilogModel>  </VerilogModel>
+  <VHDLModel>  </VHDLModel>
+  <Symbol>
+    <.ID 30 -80 v_sin "1=dc_value=0.0=dc voltage (V)=" "1=ac_mag=1.0=ac voltage value  (V)=" "1=ac_phase=0.0=ac voltage phase (degrees)=" "0=v0_value=0.0=transient d.c. offset (V)=" "0=va_value=0.0=transient sine signal peak ampltude (V)=" "0=freq_value=1000.0=transient sine signal frequency (Hz)=" "0=td_value=0.0=transient sine signal delay (s)=" "0=theta_value=0.0=transient sine signal attenuation factor (s)=" "0=phase_value=0.0=transient sine signal phase (degrees)=">
+    <Line -28 -7 -2 0 #00007f 3 1>
+    <Line -30 -7 -3 1 #00007f 3 1>
+    <Line -33 -6 -3 3 #00007f 3 1>
+    <Line -25 -6 -3 -1 #00007f 3 1>
+    <Line -36 -3 -2 4 #00007f 3 1>
+    <Line -25 -6 3 3 #00007f 3 1>
+    <Line -22 -3 2 3 #00007f 3 1>
+    <Line -20 0 2 3 #00007f 3 1>
+    <Line -9 10 -2 0 #00007f 3 1>
+    <Line -16 6 -2 -3 #00007f 3 1>
+    <Line -13 9 -3 -3 #00007f 3 1>
+    <Line -11 10 -2 -1 #00007f 3 1>
+    <Line -9 10 2 -1 #00007f 3 1>
+    <Line -7 9 2 -2 #00007f 3 1>
+    <Line -3 4 -2 3 #00007f 3 1>
+    <Line -3 4 1 -2 #00007f 3 1>
+    <Ellipse -45 -25 50 50 #00007f 3 1 #c0c0c0 1 0>
+    <.PortSym -20 -40 1 0>
+    <Line -20 -40 0 15 #000080 2 1>
+    <Line -20 25 0 15 #000080 2 1>
+    <.PortSym -20 40 2 0>
+    <Text -10 -50 16 #000000 0 "+">
+    <Text -10 20 20 #000000 0 "-">
+  </Symbol>
+</Component>
+
+<Component voltmeter>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:QucsXyceLib1_voltmeter p1 p2
+.Def:End
+  </Model>
+  <Spice>* Qucs 0.0.22  QucsXyceLib1_voltmeter.sch
+
+.SUBCKT QucsXyceLib1_voltmeter  gnd p1 p2 
+rp p1 p2 1e9
+gout 0 pton p1 p2 1.0
+rout pton 0 1.0
+
+.ENDS
+  </Spice>
+<SpiceAttach >
+  <VerilogModel>  </VerilogModel>
+  <VHDLModel>  </VHDLModel>
+  <Symbol>
+    <Rectangle -40 -35 40 45 #000000 3 1 #c0c0c0 1 0>
+    <.PortSym -30 30 1 0>
+    <Line -30 30 0 -20 #00007f 2 1>
+    <Line -10 30 0 -20 #00007f 2 1>
+    <.PortSym -10 30 2 180>
+    <Text -36 -7 14 #000000 0 "+">
+    <.ID -58 -75 voltmeter>
+    <Rectangle -33 -30 25 20 #000000 3 1 #c0c0c0 1 0>
+    <Text -26 -30 14 #000000 0 "V">
+    <Text -14 -11 18 #000000 0 "-">
+  </Symbol>
+</Component>
+

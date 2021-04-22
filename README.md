@@ -5,9 +5,9 @@ over time.
 
 == requirements
 
-This will only work with modular Qucs (currently refactor+qt5-22, but watch out
-for a development snapshot). The instruction below require it to be installed
-(as in "make install").
+This will only work with modular Qucs (modular branch, watch out for a
+development snapshot). The instruction below require it to be installed (as in
+"make install").
 
 == build
 
@@ -23,6 +23,5 @@ $ qucscli < qucs-s.qx
 == TODO
 
 - add tests
-- add qucs-s component library
 - add a netlister
 - add a xyce driver
